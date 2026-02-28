@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --navy:    #1a3a5c;
+  --saffron: #E8A020;
+  --ink:     #1a1a2e;
+  --mist:    #f4f6f9;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'DM Sans', system-ui, sans-serif;
+  color: var(--ink);
+  background: #ffffff;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Crimson Pro', Georgia, serif;
+  letter-spacing: -0.01em;
+}
+
+/* Accent rule */
+.accent-rule {
+  height: 3px;
+  background: linear-gradient(90deg, var(--saffron) 0%, var(--navy) 100%);
+  border: none;
+}
+
+/* Tag badge */
+.tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 2px;
+  background: #eef2f7;
+  color: var(--navy);
+  border: 1px solid #d0dae8;
+}
+
+.tag-saffron {
+  background: #fff8ee;
+  color: #a06010;
+  border-color: #f5c050;
+}
+
+/* Prose improvements */
+.prose-academic p {
+  line-height: 1.85;
+  font-size: 1.05rem;
+}
+
+/* Nav underline hover */
+.nav-link {
+  position: relative;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--saffron);
+  transition: width 0.25s ease;
+}
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+/* Card hover */
+.research-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.research-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 40px rgba(26,58,92,0.12);
+}
+
+/* Scroll fade-in utility */
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
