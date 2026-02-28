@@ -3,6 +3,12 @@ import './globals.css'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+}
+
 export const metadata: Metadata = {
   title: 'Pranav Chougule — Robotics & AI for Infrastructure NDE',
   description: 'PhD researcher working at the intersection of robotics, AI, and infrastructure nondestructive evaluation.',
