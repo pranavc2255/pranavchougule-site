@@ -52,7 +52,7 @@ export default function HomePage() {
               <div className="absolute -top-3 -left-3 md:-top-4 md:-left-4 w-full h-full border-2 border-saffron opacity-40 z-0 hidden sm:block" />
               <div className="absolute -bottom-3 -right-3 md:-bottom-4 md:-right-4 w-full h-full border border-navy opacity-20 z-0 hidden sm:block" />
               {/* Portrait container: shorter on mobile, taller on desktop */}
-              <div className="relative z-10 w-full md:w-72 lg:w-80 h-56 sm:h-72 md:h-80 lg:h-96 overflow-hidden">
+              <div className="relative z-10 w-full md:w-72 lg:w-80 h-72 sm:h-80 md:h-80 lg:h-96 overflow-hidden">
                 <Image
                   src="/images/portrait.jpg"
                   alt="Pranav Chougule"
@@ -61,12 +61,6 @@ export default function HomePage() {
                   priority
                   sizes="(max-width: 640px) 100vw, (max-width: 768px) 384px, 320px"
                 />
-              </div>
-              {/* Label card */}
-              <div className="absolute -bottom-5 left-0 bg-white border border-gray-100 shadow-sm px-3 md:px-4 py-1.5 md:py-2 z-20">
-                <p className="font-mono text-[9px] md:text-xs text-navy tracking-widest uppercase">
-                  Drexel University
-                </p>
               </div>
             </div>
           </div>
