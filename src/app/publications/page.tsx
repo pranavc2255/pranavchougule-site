@@ -38,7 +38,7 @@ export default function PublicationsPage() {
 
           {/* Title */}
           <h2 className="font-serif text-xl md:text-2xl text-navy font-semibold leading-snug mb-3">
-            <a href="https://doi.org/10.1117/12.3093819" target="_blank" rel="noopener noreferrer" className="hover:text-saffron transition-colors">
+            <a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13952/139520L/Laser-based-monitoring-of-robotic-carbon-dioxide-injection-in-fresh/10.1117/12.3093819.full?tab=ArticleLink" target="_blank" rel="noopener noreferrer" className="hover:text-saffron transition-colors">
               Laser-based monitoring of robotic carbon dioxide injection in fresh additively manufactured concrete
             </a>
           </h2>
@@ -59,9 +59,19 @@ export default function PublicationsPage() {
             <a href="https://doi.org/10.1117/12.3093819" target="_blank" rel="noopener noreferrer" className="font-sans text-xs md:text-sm font-medium text-white bg-navy px-4 py-2 hover:bg-navy-light transition-colors flex items-center gap-2">
               DOI: 10.1117/12.3093819 ↗
             </a>
-            <a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13952/139520L/Laser-based-monitoring-of-robotic-carbon-dioxide-injection-in-fresh/10.1117/12.3093819.full" target="_blank" rel="noopener noreferrer" className="font-sans text-xs md:text-sm font-medium text-navy border border-navy px-4 py-2 hover:bg-gray-50 transition-colors flex items-center gap-2">
+            <a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13952/139520L/Laser-based-monitoring-of-robotic-carbon-dioxide-injection-in-fresh/10.1117/12.3093819.full?tab=ArticleLink" target="_blank" rel="noopener noreferrer" className="font-sans text-xs md:text-sm font-medium text-navy border border-navy px-4 py-2 hover:bg-gray-50 transition-colors flex items-center gap-2">
               SPIE Digital Library ↗
             </a>
+          </div>
+
+          {/* Citation Block */}
+          <div className="mb-8">
+            <h3 className="font-mono text-[11px] uppercase tracking-widest text-navy mb-2 font-semibold">Citation</h3>
+            <div className="bg-gray-50 border border-gray-200 p-4 rounded-sm">
+              <p className="font-mono text-xs md:text-sm text-stone whitespace-pre-wrap break-words leading-relaxed">
+                Pranav Chougule, David Abraham, Yaghoob (Amir) Farnam, and Arvin Ebrahimkhanlou "Laser-based monitoring of robotic carbon dioxide injection in fresh additively manufactured concrete", Proc. SPIE 13952, Digital Twins, AI, and NDE for Industry Applications and Energy Systems 2026, 139520L (16 April 2026); https://doi.org/10.1117/12.3093819
+              </p>
+            </div>
           </div>
 
           {/* Abstract */}
