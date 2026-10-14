@@ -7,11 +7,11 @@ export const metadata: Metadata = {
 
 const education = [
   {
-    degree: 'PhD — Robotics & AI for Infrastructure NDE',
+    degree: 'Ph.D. Researcher — Drexel University',
     institution: 'Drexel University',
     location: 'Philadelphia, Pennsylvania, USA',
     period: 'Current',
-    detail: 'Doctoral research focused on autonomous robotic systems for nondestructive evaluation of civil infrastructure, integrating multimodal sensing with deep learning and vision-language models.',
+    detail: 'Research Area: Robotics, Physical AI, Computer Vision & Robot Learning. Investigating sensor-guided robotic manipulation and autonomous inspection, with nondestructive evaluation as the primary research application.',
     highlight: true
   },
   {
@@ -33,8 +33,9 @@ const education = [
 ]
 
 const skills = [
-  { cat: 'Robotics & Sensing', items: ['ROS / ROS 2', 'Ultrasonic (UPV)', 'Acoustic Emission', 'Hyperspectral Cameras', 'Laser Triangulation', 'LiDAR', 'IMU Fusion'] },
-  { cat: 'AI & Machine Learning', items: ['Vision-Language Models (Florence)', 'Deep Learning (PyTorch)', 'Signal Processing', 'Gaussian Splatting', 'Anomaly Detection', '3D Reconstruction'] },
+  { cat: 'Robot Learning & Simulation', items: ['Imitation Learning (ongoing research)', 'Reinforcement Learning (ongoing research)', 'Sim-to-Real Transfer', 'MuJoCo', 'NVIDIA Isaac Sim', 'Isaac Lab'] },
+  { cat: 'Robotics & Sensing', items: ['Robotic Manipulation', 'Force Sensing', 'Sensor-Guided Control', 'ROS / ROS 2', 'Ultrasonic (UPV)', 'Acoustic Emission', 'Hyperspectral Cameras', 'Laser Triangulation', 'LiDAR', 'IMU Fusion'] },
+  { cat: 'AI & Machine Learning', items: ['Qwen2.5-VL', 'Grounding DINO', 'SAM 2', 'CLIP', 'Deep Learning (PyTorch)', 'Signal Processing', 'Gaussian Splatting', 'Anomaly Detection', '3D Reconstruction'] },
   { cat: 'Software & Tools', items: ['Python', 'C++', 'MATLAB', 'Open3D', 'OpenCV', 'SLAM frameworks', 'Linux'] },
   { cat: 'Domain Expertise', items: ['Nondestructive Evaluation (NDE)', 'Structural Health Monitoring', 'Civil Infrastructure Assessment', 'Additively Manufactured Concrete'] },
 ]

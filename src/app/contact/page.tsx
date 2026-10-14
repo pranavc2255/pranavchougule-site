@@ -38,9 +38,9 @@ export default function ContactPage() {
         <h1 className="font-serif text-ink mb-4">Get in Touch</h1>
         <hr className="accent-rule w-20 mb-5 md:mb-6" />
         <p className="font-sans text-sm md:text-base text-stone max-w-2xl leading-relaxed">
-          I welcome conversations about research collaborations, speaking engagements,
-          industry partnerships, or any questions related to my work in robotic NDE and
-          infrastructure AI.
+          I welcome conversations about research collaborations, internship opportunities,
+          and industry partnerships in robot learning, Physical AI, computer vision,
+          robotic manipulation, and autonomous inspection.
         </p>
       </div>
 
@@ -77,11 +77,11 @@ export default function ContactPage() {
             </p>
             <ul className="space-y-2">
               {[
-                'Robotic inspection systems',
-                'NDE and structural health monitoring',
-                'AI-powered signal interpretation',
-                'Construction and infrastructure sensing',
-                'Vision-language models for engineering',
+                'Robot learning and Physical AI',
+                'Imitation learning, reinforcement learning, and sim-to-real transfer',
+                'Robotic manipulation and force-guided control',
+                'Computer vision and multimodal perception',
+                'Autonomous robotic inspection and NDE',
               ].map(item => (
                 <li key={item} className="flex items-center gap-3 font-sans text-sm text-blue-100">
                   <span className="w-1.5 h-1.5 bg-saffron rounded-full shrink-0"/>

@@ -1,26 +1,25 @@
-import Link from 'next/link'
+import type { Metadata } from 'next'
+import { PublicationList } from '@/components/ResearchContent'
+
+export const metadata: Metadata = {
+  title: 'Publications — Pranav Chougule',
+  description: 'Journal articles, conference proceedings, and manuscripts under review in robotic inspection, multimodal AI, and nondestructive evaluation.',
+}
 
 export default function PublicationsPage() {
   return (
-    <div className="max-w-6xl mx-auto px-4 sm:px-6 pt-24 md:pt-32 pb-14 md:pb-24">
-      
-      {/* ── Header ───────────────────────────────────────────── */}
-      <div className="mb-12 md:mb-16">
-        <span className="tag mb-4 inline-block text-[11px] uppercase tracking-widest font-mono text-saffron font-bold">
-          Publications
-        </span>
-        <h1 className="font-serif text-4xl md:text-5xl text-ink font-light leading-tight mb-6">
-          Published <span className="font-semibold text-navy">Research</span>
-        </h1>
-        <hr className="accent-rule w-16 mb-6" />
+    <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12 md:py-20">
+      <div className="mb-10 md:mb-16">
+        <span className="tag mb-4 inline-block">Publications</span>
+        <h1 className="font-serif text-ink mb-4">Publications &amp; Manuscripts</h1>
+        <hr className="accent-rule w-20 mb-6" />
         <p className="font-sans text-sm md:text-base text-stone leading-relaxed max-w-2xl">
-          Peer-reviewed publications, conference proceedings, and technical contributions from my research in robotic NDE, intelligent sensing, and infrastructure monitoring.
+          Published research in robotic inspection and intelligent sensing, followed by ongoing work under peer review.
         </p>
       </div>
-
-      {/* ── Papers List ──────────────────────────────────────── */}
-      <div className="space-y-12">
-        {/* Paper 1: SPIE 2026 */}
+      <PublicationList />
+      <details className="mt-12">
+        <summary className="cursor-pointer font-serif text-lg text-navy py-3 mb-4">SPIE publication: full citation and abstract</summary>
         <article className="bg-white border border-gray-200 p-6 md:p-8 hover:shadow-md transition-shadow">
           
           {/* Metadata Tags */}
@@ -83,16 +82,7 @@ export default function PublicationsPage() {
           </div>
 
         </article>
-      </div>
-
-      {/* ── Ongoing Research ─────────────────────────────────── */}
-      <div className="mt-16 p-6 md:p-8 bg-gray-50 border border-gray-200">
-        <h3 className="font-serif text-lg text-navy font-semibold mb-3">Ongoing Research</h3>
-        <p className="font-sans text-sm md:text-base text-stone leading-relaxed">
-          Additional manuscripts are in preparation, covering vision-language model interpretation of UPV signals, Gaussian Splatting for multi-visit NDE scene registration, and robotic acoustic emission source localisation in reinforced concrete structures. This page will be updated as submissions are accepted.
-        </p>
-      </div>
-
+      </details>
     </div>
   )
 }

@@ -49,8 +49,8 @@ export default function Nav() {
           <span className="font-serif text-lg sm:text-xl font-semibold text-navy tracking-tight group-hover:text-navy-light transition-colors truncate">
             Pranav Chougule
           </span>
-          <span className="font-mono text-[9px] sm:text-[10px] text-stone tracking-widest uppercase mt-0.5 hidden xs:block">
-            Robotics · AI · NDE
+          <span className="font-mono text-[9px] sm:text-[10px] text-stone tracking-widest uppercase mt-0.5 hidden sm:block">
+            Robot Learning · Physical AI · Robotics
           </span>
         </Link>
 
